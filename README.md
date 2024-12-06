@@ -1,2 +1,2 @@
 # BinBuddy
-![Doc1_page-0001](https://github.com/user-attachments/assets/9714aaff-f13f-403a-8ab8-71ba3bc409a2)
+![Desain tanpa judul](https://github.com/user-attachments/assets/5951d93b-8e03-4bdc-ace0-729f2373d234)
