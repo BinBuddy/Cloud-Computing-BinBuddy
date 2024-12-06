@@ -146,6 +146,14 @@ This project aims to develop a mobile application that classifies recyclable hou
     "error": "No data found for the given document ID."
   }
   ```
+
+## Envirotment
+1. Flask
+2. Google Cloud Platform Cloud Run
+3. Cloud Storage
+4. Firebase (Firestore, Authentication, Storage)
+5. Secret Key
+   
 ## How to Replicate This Project
 Follow these steps to replicate this project on your local machine:
 ### 1. Clone the Repository
