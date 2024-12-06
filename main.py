@@ -18,7 +18,7 @@ import uuid
 import time  
 
 # model = keras.models.load_model("./mobilenetv3large_waste_finetune_base.keras")
-model = keras.models.load_model("./mobilenetv3large_waste_finetune_64_latest.keras")
+model = keras.models.load_model("./model/mobilenetv3large_waste_finetune_64_latest.keras")
 
 
 def transform_image(pillow_image):
