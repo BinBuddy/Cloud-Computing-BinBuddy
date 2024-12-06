@@ -182,7 +182,7 @@ http://localhost:8080
    gcloud run deploy binbuddy --image gcr.io/[Your_PROJECT_ID/index --platform managed --region asia-southeast2
    ```
 3. API URL
-Once deployed, your API will be available at the URL provided by Google Cloud Run. Replace `[PROJECT_ID]` with your actual Google Cloud project ID in the following template:
+> Once deployed, your API will be available at the URL provided by Google Cloud Run. Replace `[PROJECT_ID]` with your actual Google Cloud project ID in the following template:
 `https://[SERVICE_NAME]-[REGION]-[PROJECT_ID].run.app`
 
 
