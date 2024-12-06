@@ -170,7 +170,7 @@ python main.py
 http://localhost:8080
 ```
 3.  API Test
-   Test the API using a testing application such as Postman, From our API documentation.
+Test the API using a testing application such as Postman, From our API documentation.
 
 ### 4. 
 
