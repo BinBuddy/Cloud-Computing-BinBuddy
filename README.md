@@ -4,15 +4,15 @@ This project aims to develop a mobile application that classifies recyclable hou
 
 ## Team Members C242-PS025
 
-| Member         | Student ID | Path          | University     |
-|----------------|------------|---------------|----------------|
-| Kent Cristopher| M195B4KY2175 | Machine Learning | Universitas Bunda Mulia |
-| Alicia Silvia  | M195B4KX0373 | Machine Learning | Universitas Bunda Mulia |
-| Tamara  | M195B4KX4287 | Machine Learning | Universitas Bunda Mulia |
-| Nisa Hanifa Daniswari | C009B4KX3385 | Cloud Computing | Universitas Gunadarma |
-| Indah Sari Sitorus  | C134B4KX1971 | Cloud Computing | Politeknik Negeri Sriwijaya |
-| Albert Hansel  | A195B4KY0318  | Mobile Development | Universitas Bunda Mulia |
-| Alvin Saputra  | A195B4KY0432 | Mobile Development | Universitas Bunda Mulia |
+| Member                | Student ID   | Path               | University     |
+|----------------       |------------  |---------------     |----------------|
+| Kent Cristopher       | M195B4KY2175 | Machine Learning   | Universitas Bunda Mulia |
+| Alicia Silvia         | M195B4KX0373 | Machine Learning   | Universitas Bunda Mulia |
+| Tamara                | M195B4KX4287 | Machine Learning   | Universitas Bunda Mulia |
+| Nisa Hanifa Daniswari | C009B4KX3385 | Cloud Computing    | Universitas Gunadarma |
+| Indah Sari Sitorus    | C134B4KX1971 | Cloud Computing    | Politeknik Negeri Sriwijaya |
+| Albert Hansel         | A195B4KY0318 | Mobile Development | Universitas Bunda Mulia |
+| Alvin Saputra         | A195B4KY0432 | Mobile Development | Universitas Bunda Mulia |
 
 ## API Documentation
 ### **Base URL**
@@ -147,4 +147,31 @@ This project aims to develop a mobile application that classifies recyclable hou
   }
   ```
 ## How to Replicate This Project
+Follow these steps to replicate this project on your local machine:
+### 1. Clone the Repository
+First, clone the repository from GitHub using the following command:
+```bash
+git clone https:https://github.com/indahsaa/Cloud-Computing-BinBuddy.git
+cd Cloud-Computing-Binbuddy
+```
+### 2. Install Dependencies
+Install the dependencies using the following command:
+```bash
+pip install -r requirements.txt
+```
+### 3. Start The Project
+Run the project using the appropriate command for your project type:
+1. Run In your terminal 
+```bash
+python main.py
+```
+2. Access the App from browser
+```bash
+http://localhost:8080
+```
+3.  API Test
+   Test the API using a testing application such as Postman, From our API documentation.
+
+### 4. 
+
 
