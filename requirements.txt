@@ -1,0 +1,10 @@
+flask
+tensorflow==2.17.0
+keras==3.4.1
+numpy
+pillow
+gunicorn
+PyJWT
+bcrypt
+firebase-admin 
+flask_bcrypt
