@@ -170,8 +170,19 @@ python main.py
 http://localhost:8080
 ```
 3.  API Test
-Test the API using a testing application such as Postman, From our API documentation.
+> Test the API using a testing application such as Postman, From our API documentation.
 
-### 4. 
+## Deploying to Google Cloud Run
+1. Create an Artifact Registry repository:
+   ```
+   gcloud builds submit --tag gcr.io/[Your_PROJECT_ID/index
+   ```
+2. Deploy the container to Cloud Run:
+   ```
+   gcloud run deploy binbuddy --image gcr.io/[Your_PROJECT_ID/index --platform managed --region asia-southeast2
+   ```
+3. API URL
+Once deployed, your API will be available at the URL provided by Google Cloud Run. Replace `[PROJECT_ID]` with your actual Google Cloud project ID in the following template:
+`https://[SERVICE_NAME]-[REGION]-[PROJECT_ID].run.app`
 
 
