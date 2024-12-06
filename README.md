@@ -147,7 +147,7 @@ This project aims to develop a mobile application that classifies recyclable hou
   }
   ```
 
-## Envirotment
+## Environment
 1. Flask
 2. Google Cloud Platform Cloud Run
 3. Cloud Storage
