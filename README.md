@@ -146,4 +146,5 @@ This project aims to develop a mobile application that classifies recyclable hou
     "error": "No data found for the given document ID."
   }
   ```
+## How to Replicate This Project
 
