@@ -14,3 +14,136 @@ This project aims to develop a mobile application that classifies recyclable hou
 | Albert Hansel  | A195B4KY0318  | Mobile Development | Universitas Bunda Mulia |
 | Alvin Saputra  | A195B4KY0432 | Mobile Development | Universitas Bunda Mulia |
 
+## API Documentation
+### **Base URL**
+> https://binbuddy-1033157844924.asia-southeast2.run.app
+
+### 1. SignUp
+* Url: /signup
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "message": "Signup successful!",
+    "user_id": "Q9telz7FcWXZuMTi4GWMmldLMhq2"
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "error": "Username already exists"
+  }
+  ```
+### 2. Login
+* Url: /login
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "error": "false",
+    "exp": 1733475117,
+    "message": "success",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiSW5kYWggU2FyaSIsImV4cCI6MTczMzQ3NTExN30.i4aGPNGacTwGL9X0owLxdqt-mfGApxcTtSkF1pAAX3I",
+    "user": "Indah Sari"
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "error": "Unable to verify"
+  }
+  ```
+### 3. Classification
+* Url: /classify
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "class_name": "clothes",
+    "probability": 0.9575
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "Message": "Invalid token: Invalid header string: 'utf-8' codec can't decode byte 0x88 in position 6: invalid start byte"
+  }
+  ```
+### 4. Save Classification
+* Url: /save-classify
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "document_id": "L8hiLw5bQY3ZfO1ZT8qZ",
+    "image_url": "https://storage.googleapis.com/binbuddy-442205.firebasestorage.app/d93541ee-d983-432d-833a-eec1cb08deed__96913416_clothes1.jpg.webp",
+    "message": "Classification saved successfully!"
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "Message": "Invalid token: Invalid header string: 'utf-8' codec can't decode byte 0x88 in position 6: invalid start byte"
+  }
+  ```
+### 5. Get Data
+* Url: /get-data
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "error": false,
+    "listStory": [
+        {
+            "class_name": "clothes",
+            "created_at": "2024-12-06T08:01:46.535000+00:00",
+            "email": "indahsaa2003@gmail.com",
+            "id": "bwA7R0ATgjOUKqTDDZ0L",
+            "image_url": "https://storage.googleapis.com/binbuddy-442205.firebasestorage.app/2a881398-01e5-4762-a3c2-8b6d74854db7__96913416_clothes1.jpg.webp",
+            "probability": 0.9575
+        },
+        {
+            "class_name": "clothes",
+            "created_at": "2024-12-06T08:01:20.869000+00:00",
+            "email": "indahsaa2003@gmail.com",
+            "id": "b3xRrK3Pa0YxwUV5oQ6a",
+            "image_url": "https://storage.googleapis.com/binbuddy-442205.firebasestorage.app/fd3eca64-b8a1-486a-bef4-ffec88c6bb7d__96913416_clothes1.jpg.webp",
+            "probability": 0.957
+        },
+        {
+            "class_name": "clothes",
+            "created_at": "2024-12-06T08:00:42.050000+00:00",
+            "email": "indahsaa2003@gmail.com",
+            "id": "L8hiLw5bQY3ZfO1ZT8qZ",
+            "image_url": "https://storage.googleapis.com/binbuddy-442205.firebasestorage.app/d93541ee-d983-432d-833a-eec1cb08deed__96913416_clothes1.jpg.webp",
+            "probability": 0.9575
+        }
+    ],
+    "message": "Data fetched successfully"
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "error": false,
+    "listStory": [],
+    "message": "No data found"
+  }
+  ```
+### 6. Delete History
+* Url: /delete-history
+* Method: Post
+* Response Body (Success):
+  ```json
+  {
+    "deleted_document_id": "b3xRrK3Pa0YxwUV5oQ6a",
+    "message": "Data deleted successfully."
+  }
+  ```
+  Failed :
+  ```json
+  {
+    "error": "No data found for the given document ID."
+  }
+  ```
+
