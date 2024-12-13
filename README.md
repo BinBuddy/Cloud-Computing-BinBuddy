@@ -88,7 +88,7 @@ This project aims to develop a mobile application that classifies recyclable hou
   ```
 ### 5. Get Data
 * Url: /get-data
-* Method: Post
+* Method: Get
 * Response Body (Success):
   ```json
   {
