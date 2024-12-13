@@ -21,6 +21,12 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 1. SignUp
 * Url: /signup
 * Method: Post
+* Body: x-www-form-urlencoded
+  ```
+  email:
+  password:
+  username:
+  ```
 * Response Body (Success):
   ```json
   {
@@ -37,6 +43,11 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 2. Login
 * Url: /login
 * Method: Post
+* Body: x-www-form-urlencoded
+  ```
+  email:
+  password:
+  ```
 * Response Body (Success):
   ```json
   {
@@ -56,6 +67,11 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 3. Classification
 * Url: /classify
 * Method: Post
+* Authorization: your Bearer Token
+* Body: form-data
+  ```
+  file:upload image
+  ```
 * Response Body (Success):
   ```json
   {
@@ -72,6 +88,14 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 4. Save Classification
 * Url: /save-classify
 * Method: Post
+* Authorization: your Bearer Token
+* Body: form-data
+  ```
+  image:your image classification
+  class_name:
+  probability:
+  email:
+  ```
 * Response Body (Success):
   ```json
   {
@@ -89,6 +113,11 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 5. Get Data
 * Url: /get-data
 * Method: Get
+* Params
+  ```
+  email:
+  ```
+* Authorization: your Bearer Token
 * Response Body (Success):
   ```json
   {
@@ -133,6 +162,12 @@ This project aims to develop a mobile application that classifies recyclable hou
 ### 6. Delete History
 * Url: /delete-history
 * Method: Post
+* Authorization: your Bearer Token
+* Body: x-www-form-urlencoded
+  ```
+  email:
+  document_id:
+  ```
 * Response Body (Success):
   ```json
   {
